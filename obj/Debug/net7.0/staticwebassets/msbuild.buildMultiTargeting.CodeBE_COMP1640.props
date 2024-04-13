@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CodeBE_COMP1640.props" />
+</Project>

@@ -1,0 +1,19 @@
+﻿{
+  "version": 2,
+  "builds": [
+    {
+      "src": "publish/**/*.dll",
+      "use": "@vercel/dotnet"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/swagger/index.html",
+      "dest": "/swagger/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/swagger/index.html"
+    }
+  ]
+}
